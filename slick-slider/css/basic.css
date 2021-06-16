@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+.main__banner img {
+    width: 100%;
+}
+.slick-prev,
+.slick-next
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: rgba(0,0,0,.8);
+    cursor: pointer;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev:after,
+.slick-next:after
+{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.slick-prev:after,
+.slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -2rem;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+    background: #fff;
+}
+.slick-dots li button {
+    width: 100px;
+    height: 5px;
+    font-size: 0;
+    border: none;
+    background: #666;
+}
